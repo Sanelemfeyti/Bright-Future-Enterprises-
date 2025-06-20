@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Future Enterprises | Premium Construction Services</title>
+    <meta name="description" content="Reliable construction services in Durban - building, electrical, painting & handyman solutions. Free quotes available!">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brightfutureenterprises.com">
+    <meta property="og:title" content="Premium Construction Services | Bright Future Enterprises">
+    <meta property="og:description" content="Reliable construction services in Durban - building, electrical, painting & handyman solutions. Free quotes available!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://brightfutureenterprises.com">
+    <meta property="twitter:title" content="Premium Construction Services | Bright Future Enterprises">
+    <meta property="twitter:description" content="Reliable construction services in Durban - building, electrical, painting & handyman solutions. Free quotes available!">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1200">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏗️</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root{--primary-dark:#0a2342;--primary-light:#1a365d;--accent-gold:#4a8fe7;--accent-light:#d4e4f7;--light:#f8f5f0;--dark:#2c2c2c;--shadow:0 4px 12px rgba(0,0,0,0.1);--transition:all 0.3s ease}
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Raleway',sans-serif;background-color:var(--light);color:var(--dark);overflow-x:hidden;line-height:1.6}
+        h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;font-weight:600}
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 20px}
+        header{position:fixed;top:0;width:100%;z-index:1000;background:rgba(10,35,66,0.95);backdrop-filter:blur(10px);padding:15px 0;transition:all 0.4s ease}
+        header.scrolled{padding:10px 0;box-shadow:0 5px 20px rgba(0,0,0,0.1)}
+        .nav-container{display:flex;justify-content:space-between;align-items:center}
+        .logo{display:flex;align-items:center;color:white;text-decoration:none;font-size:24px;font-weight:700}
+        .logo i{margin-right:10px;color:var(--accent-gold)}
+        nav ul{display:flex;list-style:none}
+        nav ul li{margin-left:30px}
+        nav ul li a{color:var(--light);text-decoration:none;font-size:16px;font-weight:500;position:relative;padding:5px 0;transition:all 0.3s ease}
+        nav ul li a:after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--accent-gold);transition:width 0.3s ease}
+        nav ul li a:hover:after,nav ul li a.active:after{width:100%}
+        nav ul li a:hover{color:var(--accent-gold)}
+        .cta-button{background:var(--accent-gold);color:var(--primary-dark);padding:12px 25px;border-radius:30px;font-weight:600;text-transform:uppercase;letter-spacing:1px;font-size:14px;transition:all 0.3s ease;border:none;cursor:pointer}
+        .cta-button:hover{background:#3a7fd7;transform:translateY(-2px);box-shadow:0 5px 15px rgba(74,143,231,0.3)}
+        .hero{height:100vh;position:relative;display:flex;align-items:center;background:linear-gradient(rgba(10,35,66,0.7),rgba(10,35,66,0.8)),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1920') center/cover no-repeat;color:var(--light);overflow:hidden}
+        .hero-content{position:relative;z-index:2;max-width:650px;padding-top:80px}
+        .hero h1{font-size:52px;margin-bottom:20px;line-height:1.2}
+        .hero p{font-size:18px;margin-bottom:30px;opacity:0.9}
+        .hero-buttons{display:flex;gap:20px}
+        .outline-button{background:transparent;border:2px solid var(--accent-gold);color:var(--light)}
+        .outline-button:hover{background:var(--accent-gold);color:var(--primary-dark)}
+        .section{padding:100px 0}
+        .section-title{text-align:center;margin-bottom:60px}
+        .section-title h2{font-size:40px;color:var(--primary-dark);position:relative;display:inline-block;margin-bottom:15px}
+        .section-title h2:after{content:'';position:absolute;bottom:-10px;left:50%;transform:translateX(-50%);width:80px;height:3px;background:var(--accent-gold)}
+        .section-title p{color:var(--primary-light);max-width:600px;margin:20px auto 0}
+        .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+        .service-card{background:white;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.08);transition:all 0.4s ease}
+        .service-card:hover{transform:translateY(-10px);box-shadow:0 15px 40px rgba(0,0,0,0.12)}
+        .service-img{height:220px;overflow:hidden;position:relative}
+        .service-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s ease}
+        .service-card:hover .service-img img{transform:scale(1.05)}
+        .service-content{padding:25px}
+        .service-content h3{color:var(--primary-dark);margin-bottom:15px;font-size:22px}
+        .service-content p{color:var(--dark);margin-bottom:20px}
+        .learn-more-btn{color:var(--accent-gold);text-decoration:none;font-weight:600;display:inline-flex;align-items:center;background:none;border:none;cursor:pointer;padding:0;font-family:inherit;font-size:inherit}
+        .learn-more-btn i{margin-left:8px;transition:transform 0.3s ease}
+        .learn-more-btn:hover i{transform:translateX(5px)}
+        .service-content .testimonial-excerpt{font-style:italic;color:var(--primary-light);margin:15px 0;padding-left:15px;border-left:3px solid var(--accent-gold);font-size:0.95em}
+        .process-container{display:flex;justify-content:space-between;flex-wrap:wrap;margin-top:50px}
+        .process-step{width:23%;text-align:center;position:relative}
+        .process-step:not(:last-child):after{content:'';position:absolute;top:40px;right:-50px;width:100px;height:2px;background:var(--accent-light)}
+        .step-icon{width:80px;height:80px;background:var(--accent-gold);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:30px;color:white}
+        .step-content h3{color:var(--primary-dark);margin-bottom:10px}
+        .testimonials{background:linear-gradient(rgba(10,35,66,0.9),rgba(10,35,66,0.9)),url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=1920') center/cover fixed;color:var(--light)}
+        .testimonials .section-title h2{color:var(--light)}
+        .testimonials-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:30px}
+        .testimonial-card{background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:10px;padding:30px;border:1px solid rgba(255,255,255,0.1)}
+        .testimonial-text{font-style:italic;margin-bottom:20px;position:relative}
+        .testimonial-text:before{content:"\"";position:absolute;top:-20px;left:-10px;font-size:60px;font-family:serif;color:var(--accent-gold);opacity:0.3}
+        .client-info{display:flex;align-items:center}
+        .client-img{width:60px;height:60px;border-radius:50%;overflow:hidden;margin-right:15px;border:2px solid var(--accent-gold)}
+        .client-img img{width:100%;height:100%;object-fit:cover}
+        .client-details h4{margin-bottom:5px}
+        .client-details p{opacity:0.8;font-size:14px}
+        .contact-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:40px}
+        .contact-info{display:flex;flex-direction:column}
+        .contact-item{display:flex;margin-bottom:30px}
+        .contact-icon{width:50px;height:50px;background:var(--accent-light);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent-gold);font-size:20px;margin-right:20px;flex-shrink:0}
+        .contact-text h3{color:var(--primary-dark);margin-bottom:5px;font-size:18px}
+        .contact-form{background:white;padding:40px;border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+        .form-group{margin-bottom:20px;position:relative}
+        .form-group label{display:block;margin-bottom:8px;font-weight:500;color:var(--primary-dark)}
+        .form-control{width:100%;padding:12px 15px;border:1px solid #ddd;border-radius:5px;font-family:'Raleway',sans-serif;font-size:16px;transition:all 0.3s ease}
+        .form-control:focus{border-color:var(--accent-gold);outline:none;box-shadow:0 0 0 3px rgba(74,143,231,0.2)}
+        textarea.form-control{min-height:150px;resize:vertical}
+        .error-message{color:#e74c3c;font-size:14px;margin-top:5px;display:none}
+        .form-control.error{border-color:#e74c3c}
+        .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.7);z-index:2000;justify-content:center;align-items:center}
+        .modal-content{background:white;border-radius:10px;max-width:600px;width:90%;padding:30px;position:relative;animation:modalIn 0.4s ease-out;max-height:80vh;overflow-y:auto}
+        .close-modal{position:absolute;top:15px;right:15px;font-size:24px;cursor:pointer;color:var(--primary-dark);transition:all 0.3s ease}
+        .close-modal:hover{color:var(--accent-gold);transform:rotate(90deg)}
+        .modal-title{color:var(--primary-dark);margin-bottom:20px;font-size:28px;position:relative;padding-bottom:15px}
+        .modal-title:after{content:'';position:absolute;bottom:0;left:0;width:60px;height:3px;background:var(--accent-gold)}
+        .modal-features{margin:20px 0;padding-left:20px}
+        .modal-features li{margin-bottom:10px;position:relative;padding-left:25px}
+        .modal-features li:before{content:'✓';position:absolute;left:0;color:var(--accent-gold);font-weight:bold}
+        @keyframes modalIn{from{opacity:0;transform:translateY(-30px)} to{opacity:1;transform:translateY(0)}}
+        footer{background:var(--primary-dark);color:var(--light);padding:80px 0 30px}
+        .footer-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:40px;margin-bottom:60px}
+        .footer-col h3{font-size:22px;margin-bottom:25px;position:relative;padding-bottom:10px}
+        .footer-col h3:after{content:'';position:absolute;bottom:0;left:0;width:50px;height:2px;background:var(--accent-gold)}
+        .footer-col p{opacity:0.8;margin-bottom:20px}
+        .social-links{display:flex;gap:15px}
+        .social-links a{display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:rgba(255,255,255,0.1);border-radius:50%;color:var(--light);transition:all 0.3s ease}
+        .social-links a:hover{background:var(--accent-gold);transform:translateY(-3px)}
+        .footer-links{list-style:none}
+        .footer-links li{margin-bottom:12px}
+        .footer-links a{color:var(--light);text-decoration:none;opacity:0.8;transition:all 0.3s ease;display:flex;align-items:center}
+        .footer-links a i{margin-right:10px;color:var(--accent-gold);font-size:12px}
+        .footer-links a:hover{opacity:1;transform:translateX(5px)}
+        .footer-bottom{text-align:center;padding-top:30px;border-top:1px solid rgba(255,255,255,0.1);opacity:0.7;font-size:14px}
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)}}
+        .fade-in{animation:fadeInUp 0.8s ease forwards}
+        .delay-1{animation-delay:0.2s}
+        .delay-2{animation-delay:0.4s}
+        .delay-3{animation-delay:0.6s}
+        .mobile-toggle{display:none;background:transparent;border:none;color:white;font-size:24px;cursor:pointer}
+        .mobile-menu{position:fixed;top:0;right:-100%;width:300px;height:100%;background:var(--primary-dark);z-index:1500;transition:all 0.4s ease;padding:80px 30px 30px;box-shadow:-5px 0 15px rgba(0,0,0,0.1)}
+        .mobile-menu .cta-button{margin-top:20px;display:block;text-align:center;width:100%}
+        .mobile-menu.active{right:0}
+        .mobile-menu ul{list-style:none}
+        .mobile-menu ul li{margin-bottom:20px}
+        .mobile-menu ul li a{color:white;text-decoration:none;font-size:18px;display:block;padding:10px 0;border-bottom:1px solid rgba(255,255,255,0.1);position:relative;padding-left:20px;transition:all 0.3s ease}
+        .mobile-menu ul li a:before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:8px;height:8px;background:var(--accent-gold);border-radius:50%;opacity:0;transition:opacity 0.3s ease}
+        .mobile-menu ul li a:hover:before,.mobile-menu ul li a.active:before{opacity:1}
+        .mobile-menu ul li a:hover{transform:translateX(10px);color:var(--accent-gold)}
+        .close-menu{position:absolute;top:20px;right:20px;font-size:24px;color:white;cursor:pointer}
+        .back-to-top{position:fixed;bottom:30px;right:30px;width:50px;height:50px;background:var(--accent-gold);border-radius:50%;color:white;display:flex;align-items:center;justify-content:center;font-size:20px;cursor:pointer;opacity:0;transform:translateY(20px);transition:all 0.3s ease;z-index:999}
+        .back-to-top.visible{opacity:1;transform:translateY(0)}
+        .back-to-top:hover{background:#3a7fd7;transform:translateY(-5px)}
+        .whatsapp-chat{position:fixed;bottom:30px;left:30px;z-index:999}
+        .whatsapp-chat a{display:flex;align-items:center;justify-content:center;width:60px;height:60px;background:#25D366;border-radius:50%;color:white;font-size:36px;box-shadow:0 5px 15px rgba(37,211,102,0.3);transition:all 0.3s ease;animation:pulse 1.5s infinite}
+        .whatsapp-chat a:hover{transform:scale(1.1);box-shadow:0 8px 20px rgba(37,211,102,0.5)}
+        @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 15px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+        .skip-link{position:absolute;top:-40px;left:0;background:var(--accent-gold);color:var(--primary-dark);padding:8px;z-index:10000;transition:top 0.3s}
+        .skip-link:focus{top:0}
+        .cookie-banner{position:fixed;bottom:0;left:0;width:100%;background:rgba(10,35,66,0.95);color:white;padding:20px;z-index:2000;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;transform:translateY(100%);transition:transform 0.4s ease}
+        .cookie-banner.visible{transform:translateY(0)}
+        .cookie-banner p{flex:1;margin-right:20px;max-width:800px}
+        .cookie-banner button{background:var(--accent-gold);color:var(--primary-dark);border:none;padding:10px 20px;border-radius:4px;cursor:pointer;font-weight:600;transition:all 0.3s ease}
+        .cookie-banner button:hover{background:#3a7fd7}
+        @media (max-width:992px){.hero h1{font-size:42px}.process-step{width:48%;margin-bottom:40px}.process-step:after{display:none}}
+        @media (max-width:768px){.hero h1{font-size:36px}nav ul{display:none}.mobile-toggle{display:block}.hero-buttons{flex-direction:column;gap:10px}.process-step{width:100%}.cookie-banner{flex-direction:column;text-align:center}.cookie-banner p{margin-right:0;margin-bottom:15px}}
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo" aria-label="Bright Future Enterprises">
+                <i class="fas fa-building"></i>
+                <span>Bright Future</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#" class="active" aria-current="page">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="cta-button" id="mainFreeQuoteBtn">Free Quote</button>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Open menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <span class="close-menu" id="closeMenu" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </span>
+        <ul>
+            <li><a href="#" class="active" aria-current="page">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button class="cta-button" id="mobileFreeQuoteBtn">Free Quote</button></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Building Your Vision, Crafting Your Future.</h1>
+                <p>Reliable Construction & Property Services — From Foundations to Finishes.</p>
+                <div class="hero-buttons">
+                    <button class="cta-button" id="viewServicesBtn">Our Services</button>
+                    <button class="cta-button outline-button" id="getQuoteBtn">Get Free Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main id="main-content">
+        <section class="section" id="services">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Our Premium Services</h2>
+                    <p>Comprehensive solutions for all your construction and renovation needs</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card fade-in">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Construction team working on a building site" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fas fa-hammer"></i> Building Construction</h3>
+                            <p>End-to-end construction solutions - from architectural planning to final finishes. Specializing in residential/commercial builds, renovations, and structural extensions.</p>
+                            <p class="testimonial-excerpt"><i>"Reliable and skilled! Built my boundary wall perfectly."</i></p>
+                            <button class="learn-more-btn" data-service="building">Learn More <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card fade-in delay-1">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Electrician working on a switchboard" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fas fa-bolt"></i> Electrical Solutions</h3>
+                            <p>Certified installations, safety inspections, and energy-efficient upgrades. COC-compliant services for homes and businesses, including emergency repairs.</p>
+                            <p class="testimonial-excerpt"><i>"Urgent electrical work sorted quickly with energy-saving advice."</i></p>
+                            <button class="learn-more-btn" data-service="electrical">Learn More <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card fade-in delay-2">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Painter applying paint to a wall" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fas fa-paint-roller"></i> Painting & Finishing</h3>
+                            <p>Transformative interior/exterior painting using premium eco-friendly coatings. Specialized in surface preparation, decorative finishes, and protective coatings.</p>
+                            <p class="testimonial-excerpt"><i>"Amazing job painting my home. Fast, neat, and affordable!"</i></p>
+                            <button class="learn-more-btn" data-service="painting">Learn More <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="service-card fade-in delay-3">
+                        <div class="service-img">
+                            <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80" alt="Handyman repairing a wooden structure" loading="lazy">
+                        </div>
+                        <div class="service-content">
+                            <h3><i class="fas fa-tools"></i> Handyman Services</h3>
+                            <p>Your complete home solution: precision repairs, maintenance programs, and renovation upgrades. "No job too complex" guarantee with 90-day warranty.</p>
+                            <p class="testimonial-excerpt"><i>"The 'Good Handy Man' team for all repairs and renovations."</i></p>
+                            <button class="learn-more-btn" data-service="handyman">Learn More <i class="fas fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="why-us">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Why Choose Bright Future?</h2>
+                    <p>We go every step ahead to ensure quality results and complete satisfaction</p>
+                </div>
+                <div class="process-container">
+                    <div class="process-step fade-in">
+                        <div class="step-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Flawless Results</h3>
+                            <p>No rework, no surprises - just quality craftsmanship</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in delay-1">
+                        <div class="step-icon">
+                            <i class="fas fa-file-certificate"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Fully Licensed</h3>
+                            <p>Insured teams with COC certification</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in delay-2">
+                        <div class="step-icon">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>Transparent Pricing</h3>
+                            <p>Free quotes with no hidden fees</p>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step fade-in delay-3">
+                        <div class="step-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="step-content">
+                            <h3>On-Time Delivery</h3>
+                            <p>Respecting your time and commitments</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Client Testimonials</h2>
+                    <p>Hear what our satisfied customers say about our work</p>
+                </div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card fade-in">
+                        <div class="testimonial-text">
+                            <p>"Bright Future Enterprises delivered our office renovation 2 weeks ahead of schedule. Their electrical team's COC certification made compliance effortless!"</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Thabo M." loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>Thabo M.</h4>
+                                <p>Property Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in delay-1">
+                        <div class="testimonial-text">
+                            <p>"Finally, a handyman service that does it right the first time. Free quotes, no hidden fees — just quality work!"</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Lerato K." loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>Lerato K.</h4>
+                                <p>Homeowner</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card fade-in delay-2">
+                        <div class="testimonial-text">
+                            <p>"Their painters transformed my dilapidated guest house into a showstopper. Professional, punctual, and perfectionists."</p>
+                        </div>
+                        <div class="client-info">
+                            <div class="client-img">
+                                <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="David P." loading="lazy">
+                            </div>
+                            <div class="client-details">
+                                <h4>David P.</h4>
+                                <p>Boutique Hotel Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Ready to build something remarkable? Get your free quote today</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="contact-item fade-in">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Phone Number</h3>
+                                <p>+27 710 964 820</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item fade-in delay-1">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email Address</h3>
+                                <p id="email-display">cokeelvis58@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item fade-in delay-2">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Service Areas</h3>
+                                <p>Durban & Nationwide</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item fade-in delay-3">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Working Hours</h3>
+                                <p>Monday - Saturday: 7AM - 6PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form fade-in">
+                        <form id="contactForm" action="https://formspree.io/f/mbjnvjle" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                                <div class="error-message" id="nameError">Please enter your name</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                                <div class="error-message" id="emailError">Please enter a valid email</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required>
+                                <div class="error-message" id="phoneError">Please enter your phone number</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service" class="form-control" required>
+                                    <option value="">Select a service</option>
+                                    <option value="building">Building Construction</option>
+                                    <option value="electrical">Electrical Solutions</option>
+                                    <option value="painting">Painting & Finishing</option>
+                                    <option value="handyman">Handyman Services</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Project Details</label>
+                                <textarea id="message" name="message" class="form-control" placeholder="Describe your project needs" required></textarea>
+                                <div class="error-message" id="messageError">Please describe your project</div>
+                            </div>
+                            
+                            <button type="submit" class="cta-button" style="width: 100%;">Request Free Quote</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>BRIGHT FUTURE ENTERPRISES</h3>
+                    <p>Reliable Construction & Property Services — From Foundations to Finishes. Your trusted partner for quality craftsmanship.</p>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/27710964820" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Home</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                        <li><a href="privacy-policy.html"><i class="fas fa-chevron-right"></i> Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Building Construction</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Electrical Solutions</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Painting & Finishing</a></li>
+                        <li><a href="#services"><i class="fas fa-chevron-right"></i> Handyman Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Free Quote</h3>
+                    <p>Get a free, no-obligation quote for your project today.</p>
+                    <a href="#contact" class="cta-button" style="display: block; text-align: center;">Request Quote</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Bright Future Enterprises. All rights reserved. | +27 710 964 820</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="serviceModal" aria-hidden="true">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal" aria-label="Close modal">&times;</span>
+            <h3 class="modal-title" id="modalServiceTitle">Service Details</h3>
+            <div id="modalServiceContent"></div>
+            <button class="cta-button" id="modalQuoteBtn" data-service="">
+                Get Free Quote for This Service
+            </button>
+        </div>
+    </div>
+
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/27710964820" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
+
+    <div class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <div class="cookie-banner" id="cookieBanner">
+        <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="privacy-policy.html" style="color: var(--accent-gold); text-decoration: underline;">Learn more</a></p>
+        <button id="acceptCookies">Accept</button>
+    </div>
+
+    <script>
+        // Global selectors
+        const header = document.getElementById('header');
+        const mobileToggle = document.getElementById('mobileToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const closeMenu = document.getElementById('closeMenu');
+        const backToTop = document.getElementById('backToTop');
+        const contactForm = document.getElementById('contactForm');
+        const viewServicesBtn = document.getElementById('viewServicesBtn');
+        const getQuoteBtn = document.getElementById('getQuoteBtn');
+        const mainFreeQuoteBtn = document.getElementById('mainFreeQuoteBtn');
+        const mobileFreeQuoteBtn = document.getElementById('mobileFreeQuoteBtn');
+        const serviceModal = document.getElementById('serviceModal');
+        const modalServiceTitle = document.getElementById('modalServiceTitle');
+        const modalServiceContent = document.getElementById('modalServiceContent');
+        const closeModal = document.getElementById('closeModal');
+        const modalQuoteBtn = document.getElementById('modalQuoteBtn');
+        const learnMoreLinks = document.querySelectorAll('.learn-more-btn');
+        const navLinks = document.querySelectorAll('nav ul li a, .mobile-menu ul li a');
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptCookiesBtn = document.getElementById('acceptCookies');
+        const currentYearElement = document.getElementById('currentYear');
+        const emailDisplay = document.getElementById('email-display');
+
+        // Service details data
+        const serviceDetails = {
+            building: {
+                title: "Building Construction",
+                content: `
+                    <p>Our comprehensive building construction services cover every stage of your project, from initial concept to final handover. We specialize in creating structures that blend functionality with aesthetic appeal.</p>
+                    
+                    <h4>Key Features:</h4>
+                    <ul class="modal-features">
+                        <li>Residential and commercial construction</li>
+                        <li>Renovations and structural extensions</li>
+                        <li>Architectural planning and design</li>
+                        <li>Certified engineering standards</li>
+                        <li>Project management from start to finish</li>
+                        <li>Quality assurance at every stage</li>
+                    </ul>
+                    
+                    <h4>Our Process:</h4>
+                    <ol>
+                        <li><strong>Consultation:</strong> Understanding your vision and requirements</li>
+                        <li><strong>Design:</strong> Creating detailed architectural plans</li>
+                        <li><strong>Approval:</strong> Securing all necessary permits</li>
+                        <li><strong>Construction:</strong> Precision building with quality materials</li>
+                        <li><strong>Inspection:</strong> Rigorous quality checks at milestones</li>
+                        <li><strong>Handover:</strong> Final walkthrough and documentation</li>
+                    </ol>
+                    
+                    <p class="testimonial-excerpt"><i>"Bright Future transformed our outdated office space into a modern, functional workspace that exceeded expectations."</i> - Thabo M., Property Developer</p>
+                `
+            },
+            electrical: {
+                title: "Electrical Solutions",
+                content: `
+                    <p>Our certified electricians provide safe, reliable, and energy-efficient electrical solutions for both residential and commercial properties. We prioritize safety and compliance in all our installations.</p>
+                    
+                    <h4>Our Services Include:</h4>
+                    <ul class="modal-features">
+                        <li>Complete electrical installations and rewiring</li>
+                        <li>Safety inspections and compliance certificates</li>
+                        <li>Energy-efficient lighting solutions</li>
+                        <li>Emergency repair services 24/7</li>
+                        <li>Smart home automation integration</li>
+                        <li>Electrical panel upgrades</li>
+                        <li>Generator installation and maintenance</li>
+                    </ul>
+                    
+                    <h4>Why Choose Our Electrical Services?</h4>
+                    <ul>
+                        <li><strong>Certified Electricians:</strong> All technicians are COC certified</li>
+                        <li><strong>Safety First:</strong> Strict adherence to safety protocols</li>
+                        <li><strong>Energy Efficiency:</strong> Solutions to reduce your power bills</li>
+                        <li><strong>Rapid Response:</strong> Emergency services available 24/7</li>
+                        <li><strong>Smart Technology:</strong> Integration of the latest home automation</li>
+                    </ul>
+                    
+                    <p class="testimonial-excerpt"><i>"When we had an electrical emergency, they responded within 30 minutes and fixed the problem safely."</i> - Sarah K., Homeowner</p>
+                `
+            },
+            painting: {
+                title: "Painting & Finishing",
+                content: `
+                    <p>Transform your space with our professional painting and finishing services. We use premium eco-friendly paints and expert techniques to deliver flawless results that last.</p>
+                    
+                    <h4>Our Painting Services:</h4>
+                    <ul class="modal-features">
+                        <li>Interior and exterior painting</li>
+                        <li>Surface preparation and repair</li>
+                        <li>Decorative finishes and textures</li>
+                        <li>Commercial-grade protective coatings</li>
+                        <li>Cabinet refinishing</li>
+                        <li>Wallpaper installation and removal</li>
+                        <li>Specialty finishes (faux, metallic, etc.)</li>
+                    </ul>
+                    
+                    <h4>Our Process:</h4>
+                    <ol>
+                        <li><strong>Preparation:</strong> Surface cleaning, sanding, and priming</li>
+                        <li><strong>Protection:</strong> Covering furniture and flooring</li>
+                        <li><strong>Application:</strong> Precision painting with quality tools</li>
+                        <li><strong>Detail Work:</strong> Clean edges and perfect finishes</li>
+                        <li><strong>Inspection:</strong> Quality check before final cleanup</li>
+                    </ol>
+                    
+                    <h4>Benefits of Our Service:</h4>
+                    <ul>
+                        <li>Eco-friendly, low-VOC paint options</li>
+                        <li>15-year warranty on exterior painting</li>
+                        <li>10-year warranty on interior painting</li>
+                        <li>Commercial-grade durability</li>
+                        <li>Detailed color consultation available</li>
+                    </ul>
+                    
+                    <p class="testimonial-excerpt"><i>"Our home looks brand new after their painting service. Their attention to detail was remarkable."</i> - James L., Homeowner</p>
+                `
+            },
+            handyman: {
+                title: "Handyman Services",
+                content: `
+                    <p>Your trusted solution for all home maintenance and repair needs. Our skilled handymen handle everything from minor fixes to major renovations with precision and care.</p>
+                    
+                    <h4>Our Handyman Services:</h4>
+                    <ul class="modal-features">
+                        <li>Plumbing repairs and fixture installation</li>
+                        <li>Drywall repair and patching</li>
+                        <li>Tile installation and repair</li>
+                        <li>Doors and windows installation</li>
+                        <li>Deck and fence repair</li>
+                        <li>Smart home device installation</li>
+                        <li>Furniture assembly</li>
+                        <li>Preventative maintenance programs</li>
+                    </ul>
+                    
+                    <h4>Why Choose Our Handyman Services?</h4>
+                    <ul>
+                        <li><strong>90-Day Warranty:</strong> On all workmanship</li>
+                        <li><strong>No Job Too Small:</strong> We handle projects of all sizes</li>
+                        <li><strong>Flexible Scheduling:</strong> Available evenings and weekends</li>
+                        <li><strong>Transparent Pricing:</strong> No hidden fees or surprises</li>
+                        <li><strong>Skilled Professionals:</strong> Experienced technicians</li>
+                    </ul>
+                    
+                    <h4>Our Guarantee:</h4>
+                    <p>We stand behind our work with a 90-day satisfaction guarantee. If you're not completely satisfied, we'll return to make it right at no additional cost.</p>
+                    
+                    <p class="testimonial-excerpt"><i>"I've used them for multiple handyman projects and they always exceed expectations."</i> - Michelle T., Property Manager</p>
+                `
+            }
+        };
+
+        // Initialization
+        function init() {
+            // Set current year in footer
+            currentYearElement.textContent = new Date().getFullYear();
+            
+            // Simple email obfuscation
+            if(emailDisplay) {
+                emailDisplay.innerHTML = 'cokeelvis58<span style="display:none">no-spam</span>@gmail.com';
+            }
+            
+            // Show cookie banner if not accepted
+            if (!localStorage.getItem('cookiesAccepted')) {
+                setTimeout(() => {
+                    cookieBanner.classList.add('visible');
+                }, 2000);
+            }
+            
+            // Event listeners
+            setupEventListeners();
+        }
+
+        // Event listeners setup
+        function setupEventListeners() {
+            // Navigation
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', smoothScroll);
+            });
+            
+            // Mobile menu
+            mobileToggle.addEventListener('click', toggleMobileMenu);
+            closeMenu.addEventListener('click', closeMobileMenu);
+            
+            // Window scroll events
+            window.addEventListener('scroll', handleScroll);
+            
+            // Back to top
+            backToTop.addEventListener('click', scrollToTop);
+            
+            // Form submission
+            contactForm.addEventListener('submit', validateForm);
+            
+            // Quote buttons
+            const quoteButtons = [viewServicesBtn, getQuoteBtn, mainFreeQuoteBtn, mobileFreeQuoteBtn];
+            quoteButtons.forEach(btn => btn && btn.addEventListener('click', scrollToContact));
+            
+            // Service modals
+            learnMoreLinks.forEach(link => {
+                link.addEventListener('click', openServiceModal);
+            });
+            
+            closeModal.addEventListener('click', closeModalHandler);
+            modalQuoteBtn.addEventListener('click', handleModalQuote);
+            
+            // Cookie consent
+            acceptCookiesBtn.addEventListener('click', acceptCookies);
+            
+            // Navigation observer
+            setupNavigationObserver();
+        }
+
+        // Smooth scrolling
+        function smoothScroll(e) {
+            const href = this.getAttribute('href');
+            if (href === '#' || href === '') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+                e.preventDefault();
+                return;
+            }
+            
+            if (this.classList.contains('learn-more-btn')) return;
+            
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                window.scrollTo({
+                    top: target.offsetTop - header.offsetHeight,
+                    behavior: 'smooth'
+                });
+                closeMobileMenu();
+            }
+        }
+
+        // Mobile menu functions
+        function toggleMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileToggle.setAttribute('aria-expanded', 'true');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileToggle.setAttribute('aria-expanded', 'false');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Scroll handling
+        function handleScroll() {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            if (window.scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        }
+
+        // Scroll to top
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Form validation
+        function validateForm(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const phone = document.getElementById('phone');
+            const message = document.getElementById('message');
+            
+            const nameError = document.getElementById('nameError');
+            const emailError = document.getElementById('emailError');
+            const phoneError = document.getElementById('phoneError');
+            const messageError = document.getElementById('messageError');
+            
+            let isValid = true;
+            
+            // Reset errors
+            document.querySelectorAll('.error-message').forEach(el => el.style.display = 'none');
+            document.querySelectorAll('.form-control').forEach(el => el.classList.remove('error'));
+            
+            // Validate name
+            if (!name.value.trim()) {
+                nameError.style.display = 'block';
+                name.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email.value.trim() || !emailRegex.test(email.value)) {
+                emailError.style.display = 'block';
+                email.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate phone
+            if (!phone.value.trim()) {
+                phoneError.style.display = 'block';
+                phone.classList.add('error');
+                isValid = false;
+            }
+            
+            // Validate message
+            if (!message.value.trim()) {
+                messageError.style.display = 'block';
+                message.classList.add('error');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Thank you for your message! We will contact you soon with your free quote.');
+                contactForm.reset();
+            }
+        }
+
+        // Scroll to contact section
+        function scrollToContact() {
+            const contactNavLink = document.querySelector('a[href="#contact"]');
+            if (contactNavLink) {
+                contactNavLink.click();
+            }
+        }
+
+        // Service modal functions
+        function openServiceModal(e) {
+            const serviceType = this.getAttribute('data-service');
+            const service = serviceDetails[serviceType];
+            
+            if (service) {
+                modalServiceTitle.textContent = service.title;
+                modalServiceContent.innerHTML = service.content;
+                modalQuoteBtn.setAttribute('data-service', serviceType);
+                serviceModal.style.display = 'flex';
+                serviceModal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+        
+        function closeModalHandler() {
+            serviceModal.style.display = 'none';
+            serviceModal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = 'auto';
+        }
+        
+        function handleModalQuote() {
+            const serviceType = this.getAttribute('data-service');
+            const serviceName = serviceDetails[serviceType].title;
+            
+            // Pre-fill the service in the contact form
+            const serviceSelect = document.getElementById('service');
+            if (serviceSelect) {
+                serviceSelect.value = serviceType;
+            }
+            
+            // Scroll to contact section
+            scrollToContact();
+            
+            // Close modal
+            closeModalHandler();
+        }
+
+        // Cookie functions
+        function acceptCookies() {
+            localStorage.setItem('cookiesAccepted', 'true');
+            cookieBanner.classList.remove('visible');
+        }
+
+        // Navigation observer
+        function setupNavigationObserver() {
+            const sections = document.querySelectorAll('section[id]');
+            const navObserverOptions = {
+                root: null,
+                rootMargin: '-50% 0px -49% 0px',
+                threshold: 0
+            };
+            
+            const navObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        activateNavLink(entry.target.id);
+                    }
+                });
+            }, navObserverOptions);
+            
+            sections.forEach(section => {
+                navObserver.observe(section);
+            });
+            
+            // Handle initial load
+            window.addEventListener('load', () => {
+                const currentScrollPos = window.scrollY;
+                if (currentScrollPos === 0) {
+                    activateNavLink('hero');
+                } else {
+                    sections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        const headerHeight = header.offsetHeight;
+                        if (rect.top <= headerHeight && rect.bottom > headerHeight) {
+                            activateNavLink(section.id);
+                        }
+                    });
+                }
+            });
+        }
+        
+        function activateNavLink(id) {
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${id}`) {
+                    link.classList.add('active');
+                } else if (id === 'hero' && link.getAttribute('href') === '#') {
+                    link.classList.add('active');
+                }
+            });
+        }
+        
+        // Initialize the site
+        document.addEventListener('DOMContentLoaded', init);
+    </script>
+</body>
+</html>
